@@ -8,7 +8,7 @@ All this information are provided from most popular and famous website, which is
 
 ## 2. Link and Preview
 
-![App view](./crypto-coin/assets/Laptop-and-mobile.jpg)
+![App view](./assets/Laptop-and-mobile.jpg)
 
 In this App I have followed the styling of [IMDB](https://www.imdb.com/). All the styling was made by css, react-alice-carousel and recharts</br>
 Project link is available at [Crypto Coin App](https://pro-crypto-coin.netlify.app/)
