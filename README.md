@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Crypto Coin app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. Description
 
-## Available Scripts
+This app help the investor tracking the crypto they are investing on by checking the current price, market cap, crypto rank, analyzing, finding crypto and adding them crypto to a favorite.</br>
 
-In the project directory, you can run:
+All this information are provided from most popular and famous website, which is: [coin market cap](https://coinmarketcap.com).</br>
 
-### `npm start`
+## 2. Link and Preview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![App view](./crypto-coin/assets/Laptop-and-mobile.jpg)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+In this App I have followed the styling of [IMDB](https://www.imdb.com/). All the styling was made by css, react-alice-carousel and recharts</br>
+Project link is available at [Crypto Coin App](https://pro-crypto-coin.netlify.app/)
 
-### `npm test`
+## 3. App Folder Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```text
+assets
+└── Laptop-and-mobile.jpg
+public
+└── index.html
+src
+└── components
+  └── Banner.js
+  └── ChartDaysData.js
+  └── CoinChart.js
+  └── CoinDetails.js
+  └── CoinsList.js
+  └── CustomTooltip.js
+  └── FavoriteButton.js
+  └── Header.js
+  └── TrendingCoins.js
+└── context
+  └── CryptoContext.js
+  └── FavoriteContext.js
+└── image
+  └── banner-logo.png
+  └── Banner-new2.jpg
+  └── Logo.png
+└── pages
+  └── AboutPage.js
+  └── CoinPage.js
+  └── FavoritePage.js
+  └── HomePage.js
+└── style
+  └── AboutPage.css
+  └── Banner.css
+  └── CoinChart.css
+  └── CoinDetails.css
+  └── CoinsList.css
+  └── favoritePage.css
+  └── Header.css
+  └── HomePage.css
+  └── index.css
+  └── TrendingCoins.css
+└── index.js
+README.md
+```
 
-### `npm run build`
+## The app must have
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [x] Logo.
+- [x] Home page.
+- [x] Coin details page.
+- [x] favorite page.
+- [x] About page.
+- [x] User can search for a crypto coin.
+- [x] User can change the currency.
+- [x] User can add and remove crypto coin from favorite.
+- [x] App interacts with different types of devices (TV, Laptop, tablet and Mobile).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## nice to have
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [ ] server side where the user can login, register and logout.
+- [ ] Pagination and Carousel.
