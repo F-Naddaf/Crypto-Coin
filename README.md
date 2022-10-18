@@ -22,27 +22,31 @@ public
 └── index.html
 src
 └── components
-  └── Banner.js
-  └── ChartDaysData.js
-  └── CoinChart.js
-  └── CoinDetails.js
-  └── CoinsList.js
-  └── CustomTooltip.js
-  └── FavoriteButton.js
-  └── Header.js
-  └── TrendingCoins.js
+  └── Banner.jsx
+  └── Carousel.jsx
+  └── ChartDaysData.jsx
+  └── CoinChart.jsx
+  └── CoinDetails.jsx
+  └── CoinsList.jsx
+  └── CustomTooltip.jsx
+  └── FavoriteButton.jsx
+  └── Header.jsx
+  └── Pagination.jsx
 └── context
-  └── CryptoContext.js
-  └── FavoriteContext.js
-└── image
-  └── banner-logo.png
-  └── Banner-new2.jpg
-  └── Logo.png
+  └── CryptoContext.jsx
+  └── FavoriteContext.jsx
+└── images
+  └── banner
+    └── banner-logo.png
+    └── Banner-new2.jpg
+    └── banner.jpg
+  └── logo
+    └── Logo.png
 └── pages
-  └── AboutPage.js
-  └── CoinPage.js
-  └── FavoritePage.js
-  └── HomePage.js
+  └── AboutPage.jsx
+  └── CoinPage.jsx
+  └── FavoritePage.jsx
+  └── HomePage.jsx
 └── style
   └── AboutPage.css
   └── Banner.css
@@ -53,8 +57,8 @@ src
   └── Header.css
   └── HomePage.css
   └── index.css
-  └── TrendingCoins.css
-└── index.js
+  └── Pagination.css
+└── index.jsx
 README.md
 ```
 
