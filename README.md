@@ -2,7 +2,16 @@
 
 ## 1. Description
 
-This app help the investor tracking the crypto they are investing on by checking the current price, market cap, crypto rank, analyzing, finding crypto and adding them crypto to a favorite.</br>
+This app helps the investor tracking the crypto they are investing on by:
+
+- Getting the live current price.
+- Finding out the most 8 cryptos moved in last 24 hours.
+- Checking the crypto coin details such as: about the coin, current price, market cap, crypto rank and chart.
+- The user can check the current price according the currencies: USD & EURO.
+- Able to add a coin to the favorite.
+- Search and found a specific coin.
+- You can read more about this app in the about page.
+</br>
 
 All this information are provided from most popular and famous website, which is: [coin market cap](https://coinmarketcap.com).</br>
 
