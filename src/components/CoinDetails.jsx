@@ -53,23 +53,23 @@ const CoinDetails = () => {
           <div className="coin-detail">
             <img
               className="coin-page-image"
-              src={coin.image.large}
-              alt={coin.name}
+              src={coin?.image?.large}
+              alt={coin?.name}
             />
-            <h3 className="coin-page-name">{coin.id}</h3>
+            <h3 className="coin-page-name">{coin?.id}</h3>
             <p className="coin-page-desc">
-              {coin.description.en.split('. ')[0]}
+              {coin?.description?.en?.split('. ')[0]}
             </p>
             <div className="coin-page-info">
-              <h4>Rank: {coin.market_cap_rank}</h4>
+              <h4>Rank: {coin?.market_cap_rank}</h4>
               <h4>
                 Current Price: {symbol}{' '}
-                {coin.market_data.current_price[currency.toLowerCase()]}
+                {coin?.market_data.current_price[currency?.toLowerCase()]}
               </h4>
               <h4>
                 Market Cap: {symbol}{' '}
                 {numberWithCommas(
-                  coin.market_data.market_cap[currency.toLowerCase()]
+                  coin?.market_data.market_cap[currency?.toLowerCase()]
                     .toString()
                     .slice(0, -6),
                 )}

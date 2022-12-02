@@ -11,13 +11,13 @@ export const FavoriteProvider = (props) => {
   }, [favoriteCoins]);
 
   const addToFavorite = (coin) => {
-    const filteredCoin = favoriteCoins.filter((e) => coin.id === e.id);
-    if (filteredCoin.length === 0) {
+    const filteredCoin = favoriteCoins?.filter((e) => coin?.id === e.id);
+    if (filteredCoin?.length === 0) {
       setFavoriteCoins([...favoriteCoins, coin]);
     }
   };
   const removeFromFavorite = (id) => {
-    setFavoriteCoins(favoriteCoins.filter((coin) => coin.id !== id));
+    setFavoriteCoins(favoriteCoins?.filter((coin) => coin?.id !== id));
   };
   return (
     <FavoriteContext.Provider

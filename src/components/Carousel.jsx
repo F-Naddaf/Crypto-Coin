@@ -18,7 +18,7 @@ const Carousel = () => {
           `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&order=market_cap_desc&per_page=100&page=1&sparkline=false`,
         );
         const coins = await response.json();
-        const sortedCoins = coins.sort((a, b) => {
+        const sortedCoins = coins?.sort((a, b) => {
           return b.price_change_percentage_24h - a.price_change_percentage_24h;
         });
         setTrending(sortedCoins.slice(0, 8));
@@ -29,8 +29,8 @@ const Carousel = () => {
       }
     })();
   }, [currency]);
-  const items = trending.map((coin) => {
-    const profit = coin.price_change_percentage_24h >= 0;
+  const items = trending?.map((coin) => {
+    const profit = coin?.price_change_percentage_24h >= 0;
     return (
       <>
         <div
@@ -61,12 +61,12 @@ const Carousel = () => {
               textTransform: 'uppercase',
               color: 'white',
             }}
-            to={`/coin/${coin.id}`}
-            key={coin.id}
+            to={`/coin/${coin?.id}`}
+            key={coin?.id}
           >
             <img
-              src={coin.image}
-              alt={coin.name}
+              src={coin?.image}
+              alt={coin?.name}
               height="60"
               style={{ marginBottom: '10px', padding: '5px' }}
             />
@@ -75,7 +75,7 @@ const Carousel = () => {
                 fontSize: '14px',
               }}
             >
-              {coin.symbol}
+              {coin?.symbol}
               <span
                 className="coin-percentage"
                 style={{
@@ -85,11 +85,11 @@ const Carousel = () => {
                 }}
               >
                 {profit && '+'}
-                {coin.price_change_percentage_24h.toFixed(2)}%
+                {coin?.price_change_percentage_24h?.toFixed(2)}%
               </span>
             </p>
             <p style={{ fontSize: '16px', fontWeight: 500, color: '#f5c518' }}>
-              {symbol} {coin.current_price.toFixed(6)}
+              {symbol} {coin?.current_price?.toFixed(6)}
             </p>
           </Link>
         </div>
